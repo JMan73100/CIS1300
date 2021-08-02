@@ -1,0 +1,16 @@
+.style{
+	margin: 2em;
+	padding: 2em;
+	border: solid;
+	border-width: 1em;
+	border-color: #f0da37;
+	width: 30em;
+	background-color: #240c7a;
+	color: white;
+}
+.content{
+	box-sizing: content-box;
+}
+.border{
+	box-sizing: border-box;
+}
