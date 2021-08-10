@@ -1,0 +1,181 @@
+body{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: 
+		"header header header"
+		"left left left"
+		"main main main"
+		"right right right"
+		"footer footer footer";
+
+
+	min-height: 100vh;
+	background-color: yellow;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	grid-area: header;
+	padding: 1em;
+	background-color: blue;
+	max-height: 300px;
+}
+aside{
+	grid-area: left;
+	padding: 1em;
+	min-height: 50px;
+}
+main{
+	grid-area: main;
+	padding: 1em;
+	background-color: gray;
+	min-height: 400px;
+}
+aside:last-of-type{
+	grid-area: right;
+	min-height: 400px;
+	background-color: #dee68d;
+}
+footer{
+	grid-area: footer;
+	padding: 1em;
+	background-color: blue;
+}
+@media screen and (max-width:575px){
+		body{
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: 
+			"header header header"
+			"left left left"
+			"main main main"
+			"right right right"
+			"footer footer footer";
+
+
+		min-height: 100vh;
+		background-color: yellow;
+		margin: 0;
+		padding: 0;
+	}
+
+	header{
+		grid-area: header;
+		padding: 1em;
+		background-color: blue;
+		max-height: 300px;
+	}
+	aside{
+		grid-area: left;
+		padding: 1em;
+		min-height: 50px;
+	}
+	main{
+		grid-area: main;
+		padding: 1em;
+		background-color: gray;
+		min-height: 400px;
+	}
+	aside:last-of-type{
+		grid-area: right;
+		min-height: 400px;
+		background-color: #dee68d;
+	}
+	footer{
+		grid-area: footer;
+		padding: 1em;
+		background-color: blue;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+	body{
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows: 1fr;
+		grid-template-areas: 
+			"header header"
+			"left right"
+			"main main"
+			"footer footer";
+
+
+		min-height: 100vh;
+		background-color: yellow;
+		margin: 0;
+		padding: 0;
+	}
+
+	header{
+		grid-area: header;
+		padding: 1em;
+		background-color: blue;
+		max-height: 300px;
+	}
+	aside{
+		grid-area: left;
+		padding: 1em;
+		min-height: 500px;
+	}
+	main{
+		grid-area: main;
+		padding: 1em;
+		background-color: gray;
+		min-height: 500px;
+	}
+	aside:last-of-type{
+		grid-area: right;
+		min-height: 500px;
+		background-color: #dee68d;
+	}
+	footer{
+		grid-area: footer;
+		padding: 1em;
+		background-color: blue;
+	}
+}
+
+@media screen and (min-width: 992px){
+	body{
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-rows: auto 1fr auto;
+			grid-template-areas: 
+				"header header header"
+				"left main right"
+				"footer footer footer";
+
+
+			min-height: 100vh;
+			background-color: yellow;
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			grid-area: header;
+			padding: 1em;
+			background-color: blue;
+			max-height: 300px;
+		}
+		aside{
+			grid-area: left;
+			padding: 1em;
+		}
+		main{
+			grid-area: main;
+			padding: 1em;
+			background-color: gray;
+		}
+		aside:last-of-type{
+			grid-area: right;
+			background-color: #dee68d;
+		}
+		footer{
+			grid-area: footer;
+			padding: 1em;
+			background-color: blue;
+		}
+}
